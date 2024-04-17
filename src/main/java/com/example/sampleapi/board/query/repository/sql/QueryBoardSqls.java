@@ -56,7 +56,7 @@ public class QueryBoardSqls {
         	num = :num
 	    """;
 
-    public static final int COUNT="""
+    public static final String COUNT="""
         SELECT
             COUNT(1)
         FROM
