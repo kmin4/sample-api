@@ -55,5 +55,12 @@ public class QueryBoardSqls {
         WHERE
         	num = :num
 	    """;
+
+    public static final int COUNT="""
+        SELECT
+            COUNT(1)
+        FROM
+            board
+    """;
     
 }
