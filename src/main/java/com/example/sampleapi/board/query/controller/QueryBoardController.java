@@ -28,7 +28,7 @@ public class QueryBoardController {
 	@Operation(summary = "게시믈 전체건수 조회", description = "게시믈 전체건수를 조회합니다.")
     @GetMapping("/totalCount")
 	public int totalCount() {
-		return  (int) queryService.totalCount();
+		return queryService.totalCount();
 	}
 
 	@Operation(summary = "게시판 목록조회", description = "게시판 목록을 페이지로 조회합니다.")

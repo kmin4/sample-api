@@ -18,7 +18,7 @@ public class QueryBoardService {
 	private final QueryBoardRepository queryBoardRepository;
 
 	public int totalCount() {
-		return Integer.parseInt(queryBoardRepository.count());
+		return Integer.valueOf(queryBoardRepository.count());
 	}
 
 	public List<BoardDto> boardList(int size, int page) {
