@@ -7,7 +7,7 @@ profiles:
       local:
         push: true
       artifacts:
-        - image: oscka/sample-api
+        - image: kmin4/sample-api
           jib:
             args:
               - -DskipTests
