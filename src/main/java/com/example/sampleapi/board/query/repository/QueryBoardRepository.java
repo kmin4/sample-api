@@ -22,6 +22,6 @@ public interface QueryBoardRepository extends CrudRepository<BoardDto, Integer> 
     BoardDto  board(int num);
 
     @Query(QueryBoardSqls.COUNT)
-    String count();
+    int count();
 
 }
