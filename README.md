@@ -43,6 +43,8 @@ vscode의 http client 플러그인을 이용하여 테스트하거나, postman�
 ```http
 ### get list
 GET http://localhost:8088/sample-api/v1/boards/list
+### get count
+GET http://localhost:8088/sample-api/v1/boards/totalCount
 ### search
 GET http://localhost:8088/sample-api/v1/boards/search?search=test
 ### get 1 row
@@ -50,7 +52,6 @@ GET http://localhost:8088/sample-api/v1/boards/1
 ### insert
 POST  http://localhost:8088/sample-api/v1/boards
 Content-Type: application/json
-
 {  
   "title": "test insert-1",
   "contents": "test insert-1",
