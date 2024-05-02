@@ -28,7 +28,7 @@ import lombok.extern.slf4j.Slf4j;
 public class CommandBoardController {
     private final CommandBoardService commandService;
 
-	@Operation(summary = "게시판 입력", description = "게시판 입력 기능입니다..")
+	@Operation(summary = "게시판 입력", description = "a게시판 입력 기능입니다..")
 	@PostMapping()
 	public ResponseEntity<ResultMessage> insert( @RequestBody  Board paramBoard) {		
 		Board board  = commandService.insert(paramBoard);
