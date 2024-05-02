@@ -28,7 +28,7 @@ import lombok.extern.slf4j.Slf4j;
 public class CommandBoardController {
     private final CommandBoardService commandService;
 
-	@Operation(summary = "게시판 입력", description = "게시판 입력 기능입니다.")
+	@Operation(summary = "게시판 입력", description = "게시판 입력 기능입니다..")
 	@PostMapping()
 	public ResponseEntity<ResultMessage> insert( @RequestBody  Board paramBoard) {		
 		Board board  = commandService.insert(paramBoard);
@@ -39,7 +39,7 @@ public class CommandBoardController {
 		
 	}
 
-	@Operation(summary = "게시판 수정", description = "게시판 수정 기능입니다.")
+	@Operation(summary = "게시판 수정", description = "게시판 수정 기능입니다..")
 	@PutMapping()
 	public ResponseEntity<ResultMessage> updateBoard(@RequestBody Board paramBoard) {
 		int result = commandService.updateBoard(paramBoard);
@@ -47,7 +47,7 @@ public class CommandBoardController {
 		
 	}
 
-	@Operation(summary = "게시판 삭제", description = "게시판 삭제 기능입니다.")
+	@Operation(summary = "게시판 삭제", description = "게시판 삭제 기능입니다..")
 	@DeleteMapping("/{num}")
 	public ResponseEntity<ResultMessage> delete(@PathVariable("num") int num) {
 		int result = commandService.delete(num);
