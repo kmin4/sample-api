@@ -26,7 +26,7 @@ public class Board {
     @Id	
 	@Schema(description = "게시물 번호", nullable = false, example = "1")
 	private int num;	
-	@Schema(description = "게시물 제목", nullable = false, example = "제목")
+	@Schema(description = "게시물 제목", nullable = false, example = "제목 TEST")
 	private String title;
 	@Schema(description = "게시물 내용")
 	private String contents;
