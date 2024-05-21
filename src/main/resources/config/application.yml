@@ -3,13 +3,16 @@ spring:
     name: sample-api
   profiles:
     active: local
-    
+
+
 spring.cloud.vault:
-    uri: http://192.168.56.20:8200
-    token: hvs.CAESIHL532yOI4i8coqMomMMqnhptmdIBb6Q94oG8ttMv95jGh4KHGh2cy5oNWxjTVZHQmpwS3VDZVRmYXZhdDAzQ2U 
-    connection-timeout: 5000
-    read-timeout: 15000
- 
-  
- 
-  
+  uri: http://192.168.56.20:8200 # vault 서버 주소
+  token: hvs.5GmIan2G2Gw370JjknyQdLgx # root_token
+  connection-timeout: 5000
+  read-timeout: 15000
+  kv:
+    backend: board-secret
+    default-context: sample-api
+    application-name: sample-api
+
+spring.config.import: vault://
