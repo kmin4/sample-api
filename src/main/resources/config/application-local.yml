@@ -9,8 +9,8 @@ spring:
   datasource:    
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.56.20:3306/sampledb?autoReconnect=true&useUnicode=true&characterEncoding=utf8
-    username: oscer
-    password: oscer1234
+    username: ${db.username}
+    password: ${db.password}
     hikari: 
       pool-name: hikari-cp
       maximum-pool-size: 30
@@ -28,7 +28,7 @@ spring:
     hibernate:
         ddl-auto: none  
 
-
+spring.config.import: vault://board-secret/${spring.application.name}/local
 
 logging:
   level:  
