@@ -6,7 +6,7 @@ spring:
     
 spring.cloud.vault:
     uri: http://192.168.56.20:8200
-    token: hvs.CAESIHL532yOI4i8coqMomMMqnhptmdIBb6Q94oG8ttMv95jGh4KHGh2cy5oNWxjTVZHQmpwS3VDZVRmYXZhdDAzQ2U
+    token: hvs.CAESIHL532yOI4i8coqMomMMqnhptmdIBb6Q94oG8ttMv95jGh4KHGh2cy5oNWxjTVZHQmpwS3VDZVRmYXZhdDAzQ2U 
     connection-timeout: 5000
     read-timeout: 15000
  

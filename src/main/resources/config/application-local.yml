@@ -28,7 +28,7 @@ spring:
     hibernate:
         ddl-auto: none  
 
-spring.config.import: vault://board-secret/demo-api/local
+  spring.config.import: vault://board-secret/demo-api/local
 
 logging:
   level:  
