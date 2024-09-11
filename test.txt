@@ -1,1 +1,16 @@
 tag 0.1.12
+
+defaultVaultConnection:
+  enabled: true
+  address: http://192.168.56.20:8200
+  skipTLSVerify: false
+
+defaultAuthMethod:
+  enabled: true
+  method: kubernetes
+  mount: dev-mount
+  kubernetes:
+    tokenAudiences:
+    - vault
+    role: role1
+    serviceAccount: default
